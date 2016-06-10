@@ -19,11 +19,4 @@
 
 
 	console.log(something('foo', 'bar'));
-
-	$timer = $('#timer');
-	var setTimer = function(){
-		var time = +new Date();
-		$timer.text( time );
-	};
-	setInterval(setTimer, 250);
 })(window, document, window.jQuery);
