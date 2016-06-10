@@ -16,6 +16,11 @@
 		return foo + bar;
 	};
 
+	$timer = $('#timer');
+	var setTimer = function(){
+		$timer.text( (new Date()).toLocaleTimeString() );
+	};
+	setInterval(setTimer, 250);
 
 
 	console.log(something('foo', 'bar'));
